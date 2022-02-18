@@ -29,11 +29,16 @@ int main()
     struct student s2 = {"Linux", 18, 82};
     struct student s3 = {"Sid", 8, 69};
     struct student s4 = {"Aquib", 5, 89};
-    
+    struct student s5;
+
+    printf("Enter Name Roll_No Marks: ");
+    scanf("%s %d %d", s5.name, &(s5.roll_no), &(s5.marks));
+
     displayStudentInfo(&s1);
     displayStudentInfo(&s2);
     displayStudentInfo(&s3);
     displayStudentInfo(&s4);
+    displayStudentInfo(&s5);
     return 0;
 }
 
